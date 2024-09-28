@@ -20,5 +20,6 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Smart Task"
-include(":app")
- 
+include(":presentation")
+include(":domain")
+include(":data")
