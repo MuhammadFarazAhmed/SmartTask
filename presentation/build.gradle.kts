@@ -30,6 +30,10 @@ android {
                 "proguard-rules.pro"
             )
         }
+        debug {
+            buildConfigField("String", "API_URL", "\"demo1414406.mockable.io\"")
+        }
+        android.buildFeatures.buildConfig = true
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -76,6 +80,11 @@ dependencies {
 
     //Navigation
     implementation(libs.navigation.compose)
+    implementation(libs.constraintlayout.compose)
+
+    implementation(libs.accompanist.systemuicontroller)
+
+    implementation(libs.androidx.splashscreen)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -85,6 +94,9 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

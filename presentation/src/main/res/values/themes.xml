@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.SmartTask" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.SmartTask" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.SmartTask.Splash" parent="Theme.SplashScreen">
+        <!-- Set the background color -->
+        <item name="windowSplashScreenBackground">#FFFFDE61</item>
+
+        <!-- Set the splash icon -->
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+
+        <!-- Post splash theme -->
+        <item name="postSplashScreenTheme">@style/Theme.SmartTask</item>
+    </style>
+
 </resources>
