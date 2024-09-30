@@ -1,5 +1,7 @@
 package com.example.smarttask
 
+import android.os.Build
+import androidx.annotation.RequiresApi
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
@@ -17,6 +19,7 @@ import org.koin.androidx.compose.koinViewModel
 data object TaskListRoute
 
 
+@RequiresApi(Build.VERSION_CODES.O)
 @Composable
 fun MainGraph(
     padding: PaddingValues,
